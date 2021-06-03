@@ -8,6 +8,8 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we greeted you'
+  greetString: # id of output
+    description: 'Greeting Message String'
 runs:
   using: 'node12'
   main: 'dist/index.js'
