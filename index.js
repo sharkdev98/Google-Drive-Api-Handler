@@ -13,6 +13,13 @@ try {
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
 
+  main().catch(console.error);
+
+} catch (error) {
+  core.setFailed(error.message);
+}
+
+async function main() {
   const client = new JWT({
     email: keys.client_email,
     key: keys.private_key,
@@ -21,7 +28,5 @@ try {
   const url = `https://dns.googleapis.com/dns/v1/projects/${keys.project_id}`;
   const res = await client.request({url});
   console.log(res.data);
-
-} catch (error) {
-  core.setFailed(error.message);
 }
+

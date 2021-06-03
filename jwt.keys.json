@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "autoupdates-315412",
+  "private_key_id": "b534fbb189a52248b7ddb64ba217e3fe80cc5294",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+ykjfXEEUIXma\nEs1V3ksermsI752wPIsI4mXosiSKgcrVcZT5HeVXYCniwwnBLNWK8ypTpgoek7Kl\nK0mcu9r8dJetT41s/ry8DeT5dRVLkXvktZnbZjZ+pvti1Ooioa4LQIDx2KdTj4Ws\nlvJKCHIXe7WSHM+GKxP/3g/gdwf+D3lp+N2h72RYW4S8rbrVuuNtwd+hnEILwLbP\nyOuxxfUKAv0S38frslyHHnAz6p/nly1p4QnKQLQTZ/Vu1Ddtoz/5EvRKkTPAI43D\nivjXrVflr5nyAhGztS915LQR6WtxW1DSSWDD9bsunIiKOBq2oenS4kT1Su6BLF0k\nS2DOfDe1AgMBAAECggEAC0ZHRdJyUr8NrBIGCgJ/vERAtVT6TmgC1qy7qqNzBFpa\nLasvdgSTFnWWKWfZg4244CQG3CLuQH39lcQimVKtRLObzlU//XEU9Hn6Y4F3QjF1\nOaqU+SxSS8FmDqJCucwweErAs/StIq4oZJlrn6izG/nRXN07UumTHiY1wvqAbD4i\nAvg9V8CHraBBAdpU+SLmLPgHz0PcXoHK3e9R1bGRXjQH2OIHo7AeaBPUvQHE5l+N\nudCfOoKoQhJ1mdPowxLR3b5FBBz0guE+/pdcZlKaRxQGf9HSWPYagUjXaUVOT9pk\nVUrXes+KoFsmpu/6IQOh82uVJmt7Sinax+dV2U5DewKBgQDsK3pUsLHtDUWmrViG\ncitvlQZktxkmV1V6dKpq8fkbBtcJjfvAcPHx8M7XqKQLhfNIoDKzNmVoZPULpPuq\n+0hCslrTb0ebQQyfT1WpFsnQQXSFIZPezv6r7SurVgeIfnW2J0kjRNqLs7U6dtP5\ndNsB7esKa3bRCyfrrPmZ33TdGwKBgQDOz1xwYAuslTNfd/Aiztn7vOl6uGKLW+BU\n8+OtRIcC5nfjMp/jXNh+OnVO1F9XPTirqa0JCvT9yahEia7HDs0bRWkIJHPkdTwF\nzz1SSUcr01z21h2yvKtxrArJ6HboJjjkB0cuorjzqj81WRNZehEvJfabaPIF7iiE\nKrBq7uObbwKBgQCWwc5OP5jktKMwmdk3waueh+fT5NmmEvvatpyOtjYJHZ2pWLxL\nBQ49HjY7jkhhnrlFNBYJNoEXWdLfAwswA0YGZWn7LD7uiWCwVWleDdD4IsBpt5x4\nD3ScdUJ6FemrJOapR3y1id9kbGwUjQQVapXfLmvqc90d5lwuYnXW1sD33wKBgGOp\nLeTBhB6w78bL557+i7Fyghkvjd2Wcu69cTRoV5+gLJoCJWbNsU5zIWDRmvhRemPP\nKqG29ATxDvOoXd9zVIgV1N2lo2uuyzQJgIWM5o1KF/yjhkBCB2SKAdD3A4YwFS5e\nC4F/zR0vJ7KvsFFoL6vG4aZW1nrhIAlBAS8m2+xlAoGATMXf7gmERA+SQUD/UaoZ\nexnhl2AMrWnDLDAGpCLYK9waTdj0iulOVMLYMNLnUjak8oYD1qR7gReY4HhS1BAZ\nNC4Ij8b3gqNVbV7na5L3tHs5NOA9kMrerZsT7y6ANWamYkHN1jKItB2++mIS8fgO\noTdRTZ38IJTisXEpxTya9HM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "autoupdatingserviceaccount@autoupdates-315412.iam.gserviceaccount.com",
+  "client_id": "105178250769558588744",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/autoupdatingserviceaccount%40autoupdates-315412.iam.gserviceaccount.com"
+}
