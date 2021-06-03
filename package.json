@@ -1,0 +1,24 @@
+{
+  "name": "google-drive-api-handler",
+  "version": "1.0.0",
+  "description": "Delete / Upload / Download File in google drive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharkdev98/Google-Drive-Api-Handler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharkdev98/Google-Drive-Api-Handler/issues"
+  },
+  "homepage": "https://github.com/sharkdev98/Google-Drive-Api-Handler#readme",
+  "dependencies": {
+    "@actions/core": "^1.3.0",
+    "@actions/github": "^5.0.0"
+  }
+}
