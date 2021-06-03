@@ -14,5 +14,5 @@ jobs:
       # Use the output from the `hello` step
       - name: "Get the output time"
         run: echo "The time was ${{ steps.hello.outputs.time }}"
-      - name: "Get the output time"
+      - name: "Get the Greet String"
         run: echo "The Greet String was ${{ steps.hello.outputs.greetString }}"

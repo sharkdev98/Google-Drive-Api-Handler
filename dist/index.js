@@ -48287,6 +48287,7 @@ const github = __nccwpck_require__(4366);
 const {JWT} = __nccwpck_require__(6981);
 const keys = __nccwpck_require__(9124);
 
+
 try {
   // `who-to-greet` input defined in action metadata file
   const nameToGreet = core.getInput('who-to-greet');
@@ -48297,20 +48298,10 @@ try {
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
   core.setOutput("greetString","Greetings! Hello World");
-  main().catch(console.error);
+  listFiles();
+
 } catch (error) {
   core.setFailed(error.message);
-}
-
-async function main() {
-  const client = new JWT({
-    email: keys.client_email,
-    key: keys.private_key,
-    scopes: ['https://www.googleapis.com/auth/cloud-platform'],
-  });
-  const url = `https://dns.googleapis.com/dns/v1/projects/${keys.project_id}`;
-  const res = await client.request({url});
-  console.log(res.data);
 }
 
 
