@@ -1,6 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const {auth, Compute} = require('google-auth-library');
+const {JWT} = require('google-auth-library');
+const keys = require('./jwt.keys.json');
 
 try {
   // `who-to-greet` input defined in action metadata file
@@ -11,15 +12,16 @@ try {
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
-  const client = new Compute({
-    // Specifying the service account email is optional.
-    serviceAccountEmail: 'autoupdatingserviceaccount@autoupdates-315412.iam.gserviceaccount.com'
+
+  const client = new JWT({
+    email: keys.client_email,
+    key: keys.private_key,
+    scopes: ['https://www.googleapis.com/auth/cloud-platform'],
   });
-  const projectId = await auth.getProjectId();
-  const url = `https://dns.googleapis.com/dns/v1/projects/${projectId}`;
+  const url = `https://dns.googleapis.com/dns/v1/projects/${keys.project_id}`;
   const res = await client.request({url});
   console.log(res.data);
+
 } catch (error) {
   core.setFailed(error.message);
 }
-
