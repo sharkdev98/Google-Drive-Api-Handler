@@ -3,14 +3,16 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: "[main]A job to say hello"
+    name: "A job to say hello"
     steps:
-      - name: "[main]Hello world action step"
+      - name: "Hello world action step"
         id: hello
         uses: sharkdev98/Google-Drive-Api-Handler@v1.0
         # uses: actions/checkout@v1.0
         with:
-          who-to-greet: '[main]Mona the actions'
+          who-to-greet: 'Mona the actions'
       # Use the output from the `hello` step
-      - name: "[main]Get the output time"
-        run: echo "[main]The time was ${{ steps.hello.outputs.time }}"
+      - name: "Get the output time"
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: "Get the output time"
+        run: echo "The Greet String was ${{ steps.hello.outputs.greetString }}"
