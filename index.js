@@ -11,12 +11,6 @@ try {
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
-  main().catch(console.error);
-} catch (error) {
-  core.setFailed(error.message);
-}
-
-async function main() {
   const client = new Compute({
     // Specifying the service account email is optional.
     serviceAccountEmail: 'autoupdatingserviceaccount@autoupdates-315412.iam.gserviceaccount.com'
@@ -25,5 +19,7 @@ async function main() {
   const url = `https://dns.googleapis.com/dns/v1/projects/${projectId}`;
   const res = await client.request({url});
   console.log(res.data);
+} catch (error) {
+  core.setFailed(error.message);
 }
 
